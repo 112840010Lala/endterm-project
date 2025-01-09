@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CandyKingdom</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/CandyKingdom.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">糖果王國</h1>
+		<nav class="navbar">
+            <div class="header-left">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">New</a>
+                <div class="dropdown-content">
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">All</a>
+                <div class="dropdown-content">
+                    <a href="./CandyKingdom.html">糖果王國</a>
+                    <a href="./SocialButterfly.html">交際花</a>
+                    <a href="./DeepSeaPressure.html">深海壓力</a>
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+<div class="main">
+    <article>
+        <img class="top_img" src="./img/candy_kingdom.png">
+        
+        <div class="question" id="Q1">
+        <h1>1. 你要應徵糖果王國的員工，<br>但面試前忘記帶準備的資料了：</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'A')">A：沒關係就算沒帶資料，我也可以表現得很好</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'B')">B：怎麼辦我要回去拿資料</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'C')">C：硬著頭皮上了，講得好不好都無所謂</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'D')">D：直接放棄這個面試機會算了</a>
+		</div>
+        </div>
+        
+        <div class="question" id="Q2">
+        <h1>2. 你抵達糖果王國的面試場地時，<br>看到有位陌生人迷路了，徘徊不前。你會？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'A')">A：主動上前提供幫助</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'B')">B：默默觀察，看是否有其他人幫忙</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'C')">C：覺得自己時間也緊迫，沒時間多管閒事</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'D')">D：內心掙扎一會兒，但最終還是選擇離開</a>
+		</div>
+        </div>
+
+        <div class="question"  id="Q3">
+        <h1>3. 面試官詢問你在團隊合作中最看重什麼？<br>你會回答？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'A')">A：有效的溝通，讓每個人都能理解彼此的需求</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'B')">B：清楚的分工和計劃，確保每人都知道自己該做什麼</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'C')">C：輕鬆愉快的氣氛，能保持團隊動力</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'D')">D：高效和快速完成，結果比過程更重要</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q4">
+        <h1>4. 糖果王國主廚問你是否願意嘗試一款<br>「未知味道」的新糖果。你會？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'A')">A：非常期待，對新體驗充滿好奇</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'B')">B：猶豫片刻後接受挑戰</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'C')">C：客氣地拒絕，覺得未知的東西讓人不安</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'D')">D：明確地拒絕，不想冒險</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q5">
+        <h1>5. 面試過程中，有應徵者打翻了桌上的資料，<br>現場一片混亂。你會？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'A')">A：立即上前幫忙，試圖平復混亂</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'B')">B：等待他人處理，但內心默默觀察</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'C')">C：覺得這是他的責任，應該自行解決</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'D')">D：心中暗自希望這能降低他的評價</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q6">
+        <h1>6. 面試結束後，糖果王國問你是否願意擔任<br>具有一定風險但挑戰性高的職位。你會？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'A')">A：立即接受挑戰，對新機會充滿熱情</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'B')">B：慎重考慮後，認為自己能勝任便接受</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'C')">C：覺得不穩定，選擇婉拒，追求穩定的工作</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'D')">D：果斷拒絕，不想冒險，更希望安穩工作</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q7">
+        <h1>7. 糖果王國的工作環境相當開放自由，但也相對<br>少有明確規範。你對這樣的環境有什麼想法？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'A')">A：覺得很棒，自由能激發創意</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'B')">B：需要些時間適應，但應該能融入</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'C')">C：擔心效率，認為沒有規範會影響工作進展</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'D')">D：不喜歡這種環境，覺得無法集中注意</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q8">
+        <h1>8. 面試中，面試官問你最大的缺點是什麼。<br>你會如何回答？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'A')">A：誠實地說出自己一個真實的缺點</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'B')">B：委婉地說出缺點，並強調已在努力改進</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'C')">C：用「優點式缺點」，如「我太追求完美」</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'D')">D：覺得沒必要過多透露自己的缺點</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q9">
+        <h1>9. 面試過程中有許多應徵者，競爭激烈。<br>你怎麼看待這種情況？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'A')">A：覺得很刺激，競爭能激發自己表現得更好</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'B')">B：略感緊張，但會盡力而為</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'C')">C：覺得壓力大，希望這次面試趕快結束</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'D')">D：不喜歡競爭，覺得自己可能不適合這個場合</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q10">
+        <h1>10. 最後，糖果王國面試官問你：「你希望在糖果王國<br>工作的最大理由是什麼？」你會怎麼回答？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'A')">A：希望挑戰自己，拓展能力，和團隊共同成長</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'B')">B：覺得糖果王國的理念和自己相符，很有吸引力</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'C')">C：希望找到一份穩定的工作，讓生活無後顧之憂</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'D')">D：認為這裡待遇不錯，主要是為了更好的物質條件</a>
+		</div>
+        </div>
+
+        <div id="result" class="result-section hidden">
+            <div class="result">
+                <div class="type">
+                    <h1 id="result-title"></h1>
+                    <p id="result-description"></p>
+                </div>
+                <div class="descriptionImg">
+                    <img id="result-image" class="img" src="" alt="Result image">
+                </div>
+            </div>
+
+			<div id="share-modal" class="modal hidden">
+				<div class="modal-content">
+					<h2 class="popup-title">Share Your Result!</h2>
+					<img id="share-result-image" class="popup-img" src="" alt="Result image" style="width: 60%; border-radius: 20px; margin: 10px 0;">
+					<p class="popup-result">Your result: <span id="share-result-title"></span></p>
+					<div class="social-icons">
+						<a href="#"><img class="social-icon" src="./img/facebook.png"></a>
+						<a href="#"><img class="social-icon" src="./img/twitter.png"></a>
+						<a href="#"><img class="social-icon" src="./img/instagram.png"></a>
+					</div>
+					<button id="close-modal" class="close-btn">Close</button>
+				</div>
+			</div>
+			
+            <div class="end-btn">
+                <a id="againButton" class="again-btn" href="#Q1">again</a>
+                <a class="share-btn" href="">share</a>
+            </div> 
+        </div>
+    </article>
+</div>
+
+    <footer>
+        <h1 class="contact">Contact</h1>
+		<div class="contact-info">
+            <P>TEL: (02)xxxx-xxxx</P>
+		    <p>Email: xxxxx123@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./js/CandyKingdom.js"></script>
+
+</body>
+
+</html>

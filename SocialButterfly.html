@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SocialButterfly</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/SocialButterfly.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">交際花</h1>
+		<nav class="navbar">
+            <div class="header-left">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">New</a>
+                <div class="dropdown-content">
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">All</a>
+                <div class="dropdown-content">
+                    <a href="./CandyKingdom.html">糖果王國</a>
+                    <a href="./SocialButterfly.html">交際花</a>
+                    <a href="./DeepSeaPressure.html">深海壓力</a>
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+<div class="main">
+    <article>
+        <img class="top_img" src="./img/SocialButterfly.png">
+        
+        <div class="question" id="Q1">
+        <h1>1. 在一場聚會中，你通常會怎麼做？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'A')">A:主動與所有人打招呼並開啟話題</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'B')">B:與熟悉的朋友待在一起，偶爾認識新朋友</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'C')">C：找個角落安靜觀察，等待別人來搭話</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'D')">D：結合不同圈子的朋友，成為大家的聯繫點</a>
+		</div>
+        </div>
+        
+        <div class="question" id="Q2">
+        <h1>2. 當朋友需要幫助時，你會怎麼做？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'A')">A：立刻放下手邊的事，親自去幫忙</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'B')">B：提供建議或安慰，給予情感支持</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'C')">C：分析問題後提供冷靜的建議</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'D')">D：找到適合的人或資源一起幫助對方</a>
+		</div>
+        </div>
+
+        <div class="question"  id="Q3">
+        <h1>3. 如果朋友之間發生了爭執，你會怎麼做？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'A')">A：試圖當和事佬，讓大家和解</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'B')">B：私下安慰雙方，維持彼此的友誼</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'C')">C：冷靜旁觀，等情況穩定後再行動</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'D')">D：主動協助解決，讓所有人重新團結</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q4">
+        <h1>4. 當朋友有新朋友加入時，你會感覺如何？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'A')">A：很高興認識新朋友，主動邀請他加入圈子</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'B')">B：小心翼翼觀察，慢慢熟悉對方</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'C')">C：對此無感，覺得有無新朋友都可以</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'D')">D：嘗試幫助新朋友融入，並連結不同人群</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q5">
+        <h1>5. 你與朋友分享秘密的頻率如何？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'A')">A：幾乎什麼都會說，完全信任他們</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'B')">B：只對幾個最親近的朋友敞開心扉</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'C')">C：很少分享，喜歡保持個人隱私</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'D')">D：會分享有趣的事，但不輕易談內心深處</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q6">
+        <h1>6. 你會如何規劃一次朋友聚會？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'A')">A：精心計劃，讓每個人都玩得開心</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'B')">B：確保熟悉的人能來，重視氣氛溫馨</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'C')">C：參加即可，不太喜歡操心這些事情</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'D')">D：結合各種建議，設計多元有趣的活動</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q7">
+        <h1>7. 朋友忽略你的訊息時，你的反應是？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'A')">A：再次發訊息提醒對方</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'B')">B：耐心等待，理解對方可能在忙</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'C')">C：完全不在意，覺得這很正常</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'D')">D：試圖透過其他朋友了解對方的狀況</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q8">
+        <h1>8. 你對朋友圈的態度是什麼？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'A')">A：喜歡有很多朋友，朋友圈越大越好</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'B')">B：重視幾個深交的朋友，質量比數量重要</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'C')">C：喜歡保持距離，選擇性參與社交</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'D')">D：喜歡將不同圈子的人連結起來，創造新火花</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q9">
+        <h1>9. 你認為朋友會怎麼形容你？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'A')">A：活潑、有趣、能帶動氣氛的人</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'B')">B：貼心、可靠、值得信賴的人</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'C')">C：冷靜、理性、主見強的人</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'D')">D：善於連結、靈活應變、有創意的人</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q10">
+        <h1>10. 你對友情的看法是什麼？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'A')">A：友情是一種支持與陪伴，越多越好</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'B')">B：友情是一種深度的信任與理解</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'C')">C：友情是一種互相尊重與獨立空間</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'D')">D：友情是一種多元的連結與成長</a>
+		</div>
+        </div>
+
+        <div id="result" class="result-section hidden">
+            <div class="result">
+                <div class="type">
+                    <h1 id="result-title"></h1>
+                    <p id="result-description"></p>
+                </div>
+                <div class="descriptionImg">
+                    <img id="result-image" class="img" src="" alt="Result image">
+                </div>
+            </div>
+
+			<div id="share-modal" class="modal hidden">
+				<div class="modal-content">
+					<h2 class="popup-title">Share Your Result!</h2>
+					<img id="share-result-image" class="popup-img" src="" alt="Result image" style="width: 60%; border-radius: 20px; margin: 10px 0;">
+					<p class="popup-result">Your result: <span id="share-result-title"></span></p>
+					<div class="social-icons">
+						<a href="#"><img class="social-icon" src="./img/facebook.png"></a>
+						<a href="#"><img class="social-icon" src="./img/twitter.png"></a>
+						<a href="#"><img class="social-icon" src="./img/instagram.png"></a>
+					</div>
+					<button id="close-modal" class="close-btn">Close</button>
+				</div>
+			</div>
+			
+            <div class="end-btn">
+                <a id="againButton" class="again-btn" href="#Q1">again</a>
+                <a class="share-btn" href="">share</a>
+            </div> 
+        </div>
+    </article>
+</div>
+
+    <footer>
+        <h1 class="contact">Contact</h1>
+		<div class="contact-info">
+            <P>TEL: (02)xxxx-xxxx</P>
+		    <p>Email: xxxxx123@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./js/SocialButterfly.js"></script>
+
+</body>
+
+</html>

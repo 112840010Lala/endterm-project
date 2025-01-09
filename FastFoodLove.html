@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FastFoodLove</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/FastFoodLove.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">速食愛情</h1>
+		<nav class="navbar">
+            <div class="header-left">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">New</a>
+                <div class="dropdown-content">
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">All</a>
+                <div class="dropdown-content">
+                    <a href="./CandyKingdom.html">糖果王國</a>
+                    <a href="./SocialButterfly.html">交際花</a>
+                    <a href="./DeepSeaPressure.html">深海壓力</a>
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+<div class="main">
+    <article>
+        <img class="top_img" src="./img/FastfoodLove.png">
+        
+        <div class="question" id="Q1">
+        <h1>1. 你認為愛情應該以激情還是穩定為基礎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'A')">A:激情</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'B')">B:穩定</a>
+		</div>
+        </div>
+        
+        <div class="question" id="Q2">
+        <h1>2. 你更看重伴侶的外表還是性格？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'A')">A：外表</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'B')">B：性格</a>
+		</div>
+        </div>
+
+        <div class="question"  id="Q3">
+        <h1>3. 當你在感情中遇到爭執時，通常會主動溝通還是選擇冷靜一下？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'A')">A：主動溝通</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'B')">B：冷靜一下</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q4">
+        <h1>4. 你更喜歡對方主動關心你還是給予你自由？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'A')">A：主動關心</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'B')">B：給予自由</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q5">
+        <h1>5. 你是否願意為愛情做出重大改變？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'A')">A：是</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'B')">B：否</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q6">
+        <h1>6. 你會因為小細節而感到不安嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q7">
+        <h1>7. 你更希望伴侶是你的依靠還是共同成長的夥伴？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'A')">A：依靠</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'B')">B：共同成長的夥伴</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q8">
+        <h1>8. 在感情中，你希望對方經常表達愛意還是默默付出？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'A')">A：經常表達愛意</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'B')">B：默默付出</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q9">
+        <h1>9. 當你的朋友批評你的伴侶時，你會感到困擾嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q10">
+        <h1>10. 你能接受長期異地戀嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'A')">A：可以</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'B')">B：不行</a>
+		</div>
+        </div>
+
+        <div id="result" class="result-section hidden">
+            <div class="result">
+                <div class="type">
+                    <h1 id="result-title"></h1>
+                    <p id="result-description"></p>
+                </div>
+                <div class="descriptionImg">
+                    <img id="result-image" class="img" src="" alt="Result image">
+                </div>
+            </div>
+
+			<div id="share-modal" class="modal hidden">
+				<div class="modal-content">
+					<h2 class="popup-title">Share Your Result!</h2>
+					<img id="share-result-image" class="popup-img" src="" alt="Result image" style="width: 60%; border-radius: 20px; margin: 10px 0;">
+					<p class="popup-result">Your result: <span id="share-result-title"></span></p>
+					<div class="social-icons">
+						<a href="#"><img class="social-icon" src="./img/facebook.png"></a>
+						<a href="#"><img class="social-icon" src="./img/twitter.png"></a>
+						<a href="#"><img class="social-icon" src="./img/instagram.png"></a>
+					</div>
+					<button id="close-modal" class="close-btn">Close</button>
+				</div>
+			</div>
+			
+            <div class="end-btn">
+                <a id="againButton" class="again-btn" href="#Q1">again</a>
+                <a class="share-btn" href="">share</a>
+            </div> 
+        </div>
+    </article>
+</div>
+
+    <footer>
+        <h1 class="contact">Contact</h1>
+        <div class="contact-info">
+            <P>TEL: (02)xxxx-xxxx</P>
+		    <p>Email: xxxxx123@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./js/FastFoodLove.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Symphony</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/Symphony.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">交想曲</h1>
+		<nav class="navbar">
+            <div class="header-left">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">New</a>
+                <div class="dropdown-content">
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">All</a>
+                <div class="dropdown-content">
+                    <a href="./CandyKingdom.html">糖果王國</a>
+                    <a href="./SocialButterfly.html">交際花</a>
+                    <a href="./DeepSeaPressure.html">深海壓力</a>
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+<div class="main">
+    <article>
+        <img class="top_img" src="./img/Symphony.png">
+        
+        <div class="question" id="Q1">
+        <h1>1. 你是否經常想到解決問題的新方法？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'A')">A:是</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'B')">B:否</a>
+		</div>
+        </div>
+        
+        <div class="question" id="Q2">
+        <h1>2. 看到藝術品或圖片時，你會聯想到什麼故事嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'B')">B：不會</a>
+		</div>
+        </div>
+
+        <div class="question"  id="Q3">
+        <h1>3. 面對一件重複性的工作，你會試圖尋找新的做法嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q4">
+        <h1>4. 當朋友給你一個挑戰時，你會感到興奮還是擔憂？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'A')">A：興奮</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'B')">B：擔憂</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q5">
+        <h1>5. 你覺得自己的點子經常與眾不同嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'A')">A：與眾不同</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'B')">B：跟別人差不多</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q6">
+        <h1>6. 你會被大自然或日常小事啟發嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q7">
+        <h1>7. 你是否會為了完成一件事而嘗試不一樣的工具或方法？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q8">
+        <h1>8. 你喜歡玩需要策略或創意的遊戲嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'A')">A：喜歡</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'B')">B：不喜歡</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q9">
+        <h1>9. 如果有一筆資金讓你開展一個項目，你會選擇一個理性還是感性的主題？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'A')">A：理性</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'B')">B：感性</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q10">
+        <h1>10. 你會主動學習新事物以拓展思維嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'B')">B：不會</a>
+		</div>
+        </div>
+
+        <div id="result" class="result-section hidden">
+            <div class="result">
+                <div class="type">
+                    <h1 id="result-title"></h1>
+                    <p id="result-description"></p>
+                </div>
+                <div class="descriptionImg">
+                    <img id="result-image" class="img" src="" alt="Result image">
+                </div>
+            </div>
+
+			<div id="share-modal" class="modal hidden">
+				<div class="modal-content">
+					<h2 class="popup-title">Share Your Result!</h2>
+					<img id="share-result-image" class="popup-img" src="" alt="Result image" style="width: 60%; border-radius: 20px; margin: 10px 0;">
+					<p class="popup-result">Your result: <span id="share-result-title"></span></p>
+					<div class="social-icons">
+						<a href="#"><img class="social-icon" src="./img/facebook.png"></a>
+						<a href="#"><img class="social-icon" src="./img/twitter.png"></a>
+						<a href="#"><img class="social-icon" src="./img/instagram.png"></a>
+					</div>
+					<button id="close-modal" class="close-btn">Close</button>
+				</div>
+			</div>
+			
+            <div class="end-btn">
+                <a id="againButton" class="again-btn" href="#Q1">again</a>
+                <a class="share-btn" href="">share</a>
+            </div> 
+        </div>
+    </article>
+</div>
+
+    <footer>
+        <h1 class="contact">Contact</h1>
+        <div class="contact-info">
+            <P>TEL: (02)xxxx-xxxx</P>
+		    <p>Email: xxxxx123@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./js/Symphony.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DeepSeaPressure</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/DeepSeaPressure.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">深海壓力</h1>
+		<nav class="navbar">
+            <div class="header-left">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">New</a>
+                <div class="dropdown-content">
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="dropbtn" href="#">All</a>
+                <div class="dropdown-content">
+                    <a href="./CandyKingdom.html">糖果王國</a>
+                    <a href="./SocialButterfly.html">交際花</a>
+                    <a href="./DeepSeaPressure.html">深海壓力</a>
+                    <a href="./FastFoodLove.html">速食愛情</a>
+                    <a href="./Symphony.html">交想曲</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+    </header>
+<div class="main">
+    <article>
+        <img class="top_img" src="./img/DeepSeaPressure.png">
+        
+        <div class="question" id="Q1">
+        <h1>1. 當工作量突然增加時，你會先整理優先順序還是感到手足無措？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'A')">A:整理優先順序</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q2" onclick="selectAnswer(1, 'B')">B:感到手足無措</a>
+		</div>
+        </div>
+        
+        <div class="question" id="Q2">
+        <h1>2. 面對不確定的情況時，你會冷靜分析還是感到焦慮？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'A')">A：冷靜分析</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q3" onclick="selectAnswer(2, 'B')">B：感到焦慮</a>
+		</div>
+        </div>
+
+        <div class="question"  id="Q3">
+        <h1>3. 你通常會常常讓自己完全放鬆一次，還是久久才一次？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'A')">A：常常</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q4" onclick="selectAnswer(3, 'B')">B：久久</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q4">
+        <h1>4. 當有人批評你時，你會立即反駁還是靜下心來思考？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'A')">A：立即反駁</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q5" onclick="selectAnswer(4, 'B')">B：靜下心來思考</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q5">
+        <h1>5. 你有睡眠困難的情況嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'A')">A：有</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q6" onclick="selectAnswer(5, 'B')">B：沒有</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q6">
+        <h1>6. 你是否會將壓力與他人分享？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q7" onclick="selectAnswer(6, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q7">
+        <h1>7. 面對壓力時，你會選擇試著釋放它還是逃避？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'A')">A：試著釋放它</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q8" onclick="selectAnswer(7, 'B')">B：逃避</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q8">
+        <h1>8. 當計畫被打亂時，你能快速適應嗎？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'A')">A：可以</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q9" onclick="selectAnswer(8, 'B')">B：不行</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q9">
+        <h1>9. 你是否會為了完成工作犧牲自己的時間或健康？</h1>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'A')">A：會</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#Q10" onclick="selectAnswer(9, 'B')">B：不會</a>
+		</div>
+        </div>
+        
+        <div class="question"  id="Q10">
+        <h1>10. 你覺得自己有良好的時間管理能力嗎</h1>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'A')">A：有</a>
+		</div>
+		<div class="answers">
+			<a class="answer-link" href="#result" onclick="selectAnswer(10, 'B')">B：沒有</a>
+		</div>
+        </div>
+
+        <div id="result" class="result-section hidden">
+            <div class="result">
+                <div class="type">
+                    <h1 id="result-title"></h1>
+                    <p id="result-description"></p>
+                </div>
+                <div class="descriptionImg">
+                    <img id="result-image" class="img" src="" alt="Result image">
+                </div>
+            </div>
+
+			<div id="share-modal" class="modal hidden">
+				<div class="modal-content">
+					<h2 class="popup-title">Share Your Result!</h2>
+					<img id="share-result-image" class="popup-img" src="" alt="Result image" style="width: 60%; border-radius: 20px; margin: 10px 0;">
+					<p class="popup-result">Your result: <span id="share-result-title"></span></p>
+					<div class="social-icons">
+						<a href="#"><img class="social-icon" src="./img/facebook.png"></a>
+						<a href="#"><img class="social-icon" src="./img/twitter.png"></a>
+						<a href="#"><img class="social-icon" src="./img/instagram.png"></a>
+					</div>
+					<button id="close-modal" class="close-btn">Close</button>
+				</div>
+			</div>
+			
+            <div class="end-btn">
+                <a id="againButton" class="again-btn" href="#Q1">again</a>
+                <a class="share-btn" href="">share</a>
+            </div> 
+        </div>
+    </article>
+</div>
+
+    <footer>
+        <h1 class="contact">Contact</h1>
+        <div class="contact-info">
+            <P>TEL: (02)xxxx-xxxx</P>
+		    <p>Email: xxxxx123@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./js/DeepSeaPressure.js"></script>
+
+</body>
+
+</html>
